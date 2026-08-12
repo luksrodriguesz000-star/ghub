@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HV Yonen FH – Clínica Veterinária e Pet Shop Popular no Rio de Janeiro</title>
+    <meta name="description" content="Clínica veterinária 24h e pet shop popular no Rio de Janeiro. Banho, tosa, consultas, hotel, creche, adestramento e a maior variedade de brinquedos e produtos pet. CNPJ 64.703.848/0001-60.">
+    <meta name="keywords" content="pet shop rio de janeiro, clínica veterinária 24h, brinquedos para cães, brinquedos para gatos, banho e tosa, hotel pet, creche, adestramento, ração, produtos pet, Yonen, HV Yonen FH">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧸</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18191725996">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18191725996');
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "HV Yonen FH Clínica Veterinária e Pet Shop Popular LTDA",
+            "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7990?w=600",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rua Marquês de Abrantes, 450",
+                "addressLocality": "Rio de Janeiro",
+                "addressRegion": "RJ",
+                "postalCode": "22230-060",
+                "addressCountry": "BR"
+            },
+            "telephone": "+5521999998888",
+            "openingHours": "Mo-Sa 08:00-20:00, Su 09:00-16:00",
+            "priceRange": "R$10 - R$500",
+            "taxID": "64.703.848/0001-60"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                { "@type": "Question", "name": "Vocês possuem brinquedos para todos os portes?", "acceptedAnswer": { "@type": "Answer", "text": "Sim! Trabalhamos com brinquedos para cães e gatos de todos os tamanhos, incluindo mordedores, pelúcias, bolinhas, cordas e jogos inteligentes. Nossa equipe pode ajudar na escolha ideal para seu pet." } },
+                { "@type": "Question", "name": "A clínica veterinária atende emergências?", "acceptedAnswer": { "@type": "Answer", "text": "Atendemos emergências 24 horas por dia, incluindo finais de semana e feriados. Nossa clínica conta com veterinários de plantão e equipamentos modernos para diagnósticos rápidos." } },
+                { "@type": "Question", "name": "Fazem entrega de ração e brinquedos?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, realizamos entregas em todo o município do Rio de Janeiro. Para compras acima de R$ 99, o frete é grátis. Você pode pedir pelo WhatsApp ou site." } }
+            ]
+        }
+    </script>
+
+    <style>
+        :root {
+            --azul-pet: #0077B6;
+            --azul-claro: #48CAE4;
+            --laranja-vivo: #FF6B35;
+            --laranja-claro: #FFA364;
+            --verde-grama: #4CAF50;
+            --branco: #FFFFFF;
+            --off-white: #F9F9F5;
+            --cinza-claro: #F0F0EC;
+            --cinza-medio: #6B6B6B;
+            --cinza-escuro: #2A2A2A;
+            --texto: #333333;
+            --sombra-suave: 0 6px 18px rgba(0,0,0,0.06);
+            --sombra-media: 0 10px 30px rgba(0,0,0,0.10);
+            --sombra-laranja: 0 10px 28px rgba(255,107,53,0.35);
+            --borda-redonda: 20px;
+            --borda-pequena: 12px;
+            --transicao: 0.3s ease;
+            --fonte-titulo: 'Baloo 2', cursive;
+            --fonte-corpo: 'Nunito', sans-serif;
+            --largura-max: 1320px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: var(--fonte-corpo);
+            color: var(--texto);
+            background: var(--off-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+            padding: 12px 0; transition: background 0.3s, box-shadow 0.3s; background: transparent;
+        }
+        .header.scrolled {
+            background: rgba(255,255,255,0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08); padding: 8px 0;
+        }
+        .header-inner {
+            max-width: var(--largura-max); margin: 0 auto; padding: 0 24px;
+            display: flex; align-items: center; justify-content: space-between; gap: 20px;
+        }
+        .logo-link { display: flex; align-items: center; text-decoration: none; gap: 10px; flex-shrink: 0; }
+        .logo-icon {
+            width: 44px; height: 44px; background: var(--laranja-vivo); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: white;
+            transition: transform 0.3s;
+        }
+        .logo-link:hover .logo-icon { transform: scale(1.1) rotate(-5deg); }
+        .logo-text {
+            font-family: var(--fonte-titulo); font-weight: 700; font-size: 1.3rem; color: var(--azul-pet);
+            line-height: 1.2; letter-spacing: -0.3px;
+        }
+        .logo-text small { display: block; font-family: var(--fonte-corpo); font-weight: 400; font-size: 0.65rem; color: var(--cinza-medio); }
+        .nav-links { display: flex; list-style: none; gap: 8px; align-items: center; }
+        .nav-links a {
+            text-decoration: none; color: var(--texto); font-weight: 600; font-size: 0.9rem;
+            padding: 8px 14px; border-radius: 20px; position: relative; transition: color var(--transicao);
+        }
+        .nav-links a::after {
+            content: ''; position: absolute; bottom: 4px; left: 50%; transform: translateX(-50%) scaleX(0);
+            width: 60%; height: 3px; background: var(--laranja-vivo); border-radius: 3px;
+            transition: transform var(--transicao);
+        }
+        .nav-links a:hover { color: var(--laranja-vivo); }
+        .nav-links a:hover::after { transform: translateX(-50%) scaleX(1); }
+        .header-cta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+        .btn-whatsapp-header {
+            display: inline-flex; align-items: center; gap: 6px; background: #25D366;
+            color: white; padding: 10px 16px; border-radius: 24px; text-decoration: none;
+            font-weight: 700; font-size: 0.85rem; transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn-whatsapp-header:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(37,211,102,0.35); }
+        .btn-whatsapp-header .online-dot {
+            width: 9px; height: 9px; background: #00e676; border-radius: 50%; display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(0,230,118,0.6); } 50% { box-shadow: 0 0 0 8px rgba(0,230,118,0); } }
+        .btn-cta-header {
+            display: inline-flex; align-items: center; gap: 6px; background: var(--laranja-vivo);
+            color: white; padding: 11px 22px; border-radius: 24px; text-decoration: none;
+            font-weight: 800; font-size: 0.9rem; transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--sombra-laranja);
+        }
+        .btn-cta-header:hover { transform: scale(1.05); box-shadow: 0 12px 32px rgba(255,107,53,0.5); }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; z-index: 1001; background: none; border: none; }
+        .hamburger span { width: 26px; height: 3px; background: var(--azul-pet); border-radius: 3px; transition: var(--transicao); }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px,6px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-6px); }
+        .mobile-menu {
+            position: fixed; inset: 0; background: rgba(255,255,255,0.96); backdrop-filter: blur(20px);
+            z-index: 999; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 20px; transform: translateX(100%); transition: transform 0.4s ease;
+        }
+        .mobile-menu.active { transform: translateX(0); }
+        .mobile-menu a { font-size: 1.5rem; font-weight: 700; color: var(--azul-pet); text-decoration: none; }
+        .mobile-menu a:hover { color: var(--laranja-vivo); }
+        .mobile-menu .btn-cta-header { font-size: 1.1rem; padding: 14px 28px; margin-top: 10px; }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative; height: 100vh; min-height: 600px; overflow: hidden;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .hero-slide {
+            position: absolute; inset: 0; opacity: 0; transition: opacity 1s ease-in-out;
+            background-size: cover; background-position: center;
+        }
+        .hero-slide.active { opacity: 1; }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, rgba(0,119,182,0.55) 0%, rgba(0,119,182,0.3) 50%, rgba(249,249,245,0.9) 90%);
+            z-index: 2;
+        }
+        .hero-content { position: relative; z-index: 3; text-align: center; max-width: 780px; padding: 0 24px; margin-top: 30px; }
+        .hero-content h1 {
+            font-family: var(--fonte-titulo); font-size: clamp(2.2rem, 5vw, 3.8rem);
+            color: #fff; text-shadow: 0 4px 18px rgba(0,0,0,0.4); line-height: 1.2; margin-bottom: 16px;
+        }
+        .hero-content p { font-size: 1.1rem; color: rgba(255,255,255,0.92); margin-bottom: 28px; }
+        .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+        .btn-hero {
+            padding: 14px 30px; border-radius: 30px; font-weight: 800; font-size: 1rem;
+            text-decoration: none; transition: all 0.3s; display: inline-block;
+        }
+        .btn-hero-primary { background: var(--laranja-vivo); color: white; box-shadow: var(--sombra-laranja); }
+        .btn-hero-primary:hover { background: #e55b2b; transform: translateY(-3px); }
+        .btn-hero-secondary { background: rgba(255,255,255,0.85); color: var(--azul-pet); }
+        .btn-hero-secondary:hover { background: white; transform: translateY(-3px); }
+        .hero-dots { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 5; display: flex; gap: 10px; }
+        .hero-dots button { width: 12px; height: 12px; border-radius: 50%; border: 2px solid white; background: transparent; cursor: pointer; transition: 0.3s; }
+        .hero-dots button.active { background: var(--laranja-vivo); border-color: var(--laranja-vivo); }
+        .hero-arrows { position: absolute; z-index: 5; top: 50%; transform: translateY(-50%); width: 100%; display: flex; justify-content: space-between; padding: 0 16px; pointer-events: none; }
+        .hero-arrows button { pointer-events: all; background: rgba(255,255,255,0.7); border: none; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; color: var(--azul-pet); opacity: 0; transition: 0.3s; backdrop-filter: blur(4px); }
+        .hero:hover .hero-arrows button { opacity: 1; }
+        .hero-arrows button:hover { background: white; }
+
+        /* ===== FAIXA DE CONFIANÇA ===== */
+        .faixa { background: white; padding: 32px 24px; position: relative; z-index: 10; margin-top: -40px; border-radius: 24px 24px 0 0; }
+        .faixa-inner { max-width: var(--largura-max); margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+        .faixa-card { text-align: center; padding: 20px; border-radius: var(--borda-pequena); box-shadow: var(--sombra-suave); transition: 0.3s; }
+        .faixa-card:hover { transform: translateY(-4px); }
+        .faixa-icon { font-size: 2.4rem; margin-bottom: 8px; color: var(--azul-pet); }
+        .faixa-card h3 { font-family: var(--fonte-titulo); color: var(--azul-pet); font-size: 1.1rem; }
+
+        /* ===== SEÇÕES GERAIS ===== */
+        .section { padding: 80px 24px; }
+        .section-inner { max-width: var(--largura-max); margin: 0 auto; }
+        .section-titulo { text-align: center; margin-bottom: 48px; }
+        .section-titulo h2 { font-family: var(--fonte-titulo); font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--azul-pet); }
+        .section-titulo p { font-size: 1.05rem; color: var(--cinza-medio); }
+
+        /* ===== SOBRE ===== */
+        .sobre-section { background: var(--cinza-claro); }
+        .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+        .sobre-img img { width: 100%; border-radius: var(--borda-redonda); box-shadow: var(--sombra-media); }
+        .sobre-texto h2 { font-family: var(--fonte-titulo); font-size: 2rem; color: var(--azul-pet); margin-bottom: 16px; }
+        .sobre-texto p { margin-bottom: 14px; line-height: 1.8; }
+        .sobre-valores { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 20px; }
+        .valor-card { background: white; border-radius: var(--borda-pequena); padding: 16px; text-align: center; border-bottom: 3px solid transparent; transition: 0.3s; }
+        .valor-card:hover { border-bottom-color: var(--laranja-vivo); transform: translateY(-4px); }
+        .valor-icon { font-size: 1.8rem; }
+        .valor-card h4 { font-family: var(--fonte-titulo); color: var(--azul-pet); }
+
+        /* ===== SERVIÇOS ===== */
+        .servicos-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+        .servico-card { background: white; border-radius: var(--borda-redonda); overflow: hidden; box-shadow: var(--sombra-suave); transition: 0.3s; }
+        .servico-card:hover { transform: translateY(-6px); box-shadow: var(--sombra-media); }
+        .servico-img { height: 200px; overflow: hidden; position: relative; }
+        .servico-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .servico-card:hover .servico-img img { transform: scale(1.08); }
+        .servico-img .servico-icone {
+            position: absolute; bottom: 10px; left: 14px; font-size: 2rem; color: white; z-index: 2;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        }
+        .servico-body { padding: 18px; }
+        .servico-body h3 { font-family: var(--fonte-titulo); color: var(--azul-pet); }
+        .servico-preco { color: var(--laranja-vivo); font-weight: 800; margin: 8px 0; }
+        .btn-servico { display: inline-block; background: var(--laranja-vivo); color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: 700; opacity: 0; transform: translateY(8px); transition: 0.3s; }
+        .servico-card:hover .btn-servico { opacity: 1; transform: translateY(0); }
+
+        /* ===== BRINQUEDOS EM DESTAQUE ===== */
+        .brinquedos-section { background: var(--off-white); }
+        .brinquedos-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+        .brinquedo-card { background: white; border-radius: var(--borda-pequena); overflow: hidden; box-shadow: var(--sombra-suave); transition: 0.3s; text-align: center; }
+        .brinquedo-card:hover { transform: translateY(-4px); }
+        .brinquedo-img { height: 180px; background: #f2f2f2; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .brinquedo-img img { width: 80%; height: auto; max-height: 90%; object-fit: contain; transition: 0.3s; }
+        .brinquedo-card:hover .brinquedo-img img { transform: scale(1.1); }
+        .brinquedo-body { padding: 14px; }
+        .brinquedo-body h4 { font-weight: 700; color: var(--azul-pet); margin-bottom: 4px; }
+        .brinquedo-body .preco { font-weight: 800; color: var(--laranja-vivo); }
+        .btn-comprar {
+            display: inline-block; background: #25D366; color: white; padding: 8px 18px;
+            border-radius: 18px; text-decoration: none; font-weight: 700; margin-top: 8px;
+            transition: 0.3s;
+        }
+        .btn-comprar:hover { background: #1ebe57; transform: scale(1.04); }
+
+        /* ===== DEPOIMENTOS ===== */
+        .depoimentos-section { background: linear-gradient(135deg, #E6F0FA 0%, #FFF0E6 100%); }
+        .depo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+        .depo-card { background: white; border-radius: var(--borda-redonda); padding: 24px; box-shadow: var(--sombra-suave); }
+        .depo-card .estrelas { color: #FFB800; letter-spacing: 2px; }
+        .depo-card p { font-style: italic; margin: 10px 0; }
+        .depo-autor { display: flex; align-items: center; gap: 10px; }
+        .depo-autor img { width: 40px; height: 40px; border-radius: 50%; }
+
+        /* ===== EQUIPE ===== */
+        .equipe-grid { display: flex; justify-content: center; gap: 36px; flex-wrap: wrap; }
+        .equipe-card { text-align: center; }
+        .equipe-card img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid var(--azul-pet); object-fit: cover; }
+        .equipe-card h4 { font-family: var(--fonte-titulo); color: var(--azul-pet); }
+
+        /* ===== FAQ ===== */
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: white; border-radius: var(--borda-pequena); margin-bottom: 10px; box-shadow: var(--sombra-suave); }
+        .faq-q { width: 100%; background: none; border: none; padding: 18px 20px; text-align: left; font-weight: 700; color: var(--azul-pet); cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s; padding: 0 20px; color: var(--cinza-medio); }
+        .faq-item.active .faq-a { max-height: 200px; padding: 0 20px 18px; }
+
+        /* ===== CTA FINAL ===== */
+        .cta-final { background: var(--azul-pet); color: white; text-align: center; }
+        .cta-final h2 { font-family: var(--fonte-titulo); color: white; }
+
+        /* ===== RODAPÉ ===== */
+        .footer { background: #1E1E1E; color: #ccc; padding: 50px 24px 20px; }
+        .footer-inner { max-width: var(--largura-max); margin: 0 auto; display: grid; grid-template-columns: repeat(5,1fr); gap: 24px; }
+        .footer-col h4 { color: white; font-family: var(--fonte-titulo); margin-bottom: 14px; }
+        .footer-col a, .footer-col li { color: #bbb; text-decoration: none; list-style: none; line-height: 2; font-size: 0.85rem; }
+        .footer-col a:hover { color: var(--laranja-vivo); }
+        .footer-redes a { font-size: 1.5rem; margin-right: 12px; color: #bbb; }
+        .footer-redes a:hover { color: var(--laranja-vivo); }
+        .footer-bottom { text-align: center; margin-top: 30px; border-top: 1px solid #333; padding-top: 18px; font-size: 0.8rem; color: #888; }
+
+        @media (max-width: 1024px) {
+            .servicos-grid, .depo-grid { grid-template-columns: repeat(2,1fr); }
+            .brinquedos-grid { grid-template-columns: repeat(3,1fr); }
+            .footer-inner { grid-template-columns: repeat(3,1fr); }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; } .hamburger { display: flex; }
+            .sobre-grid { grid-template-columns: 1fr; }
+            .servicos-grid, .brinquedos-grid { grid-template-columns: 1fr 1fr; }
+            .depo-grid { grid-template-columns: 1fr; }
+            .footer-inner { grid-template-columns: 1fr 1fr; }
+            .faixa-inner { grid-template-columns: 1fr; }
+            .hero-content h1 { font-size: 1.8rem; }
+        }
+        @media (max-width: 480px) {
+            .servicos-grid, .brinquedos-grid { grid-template-columns: 1fr; }
+            .footer-inner { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#" class="logo-link">
+                <div class="logo-icon">🧸</div>
+                <span class="logo-text">HV Yonen FH<small>Clínica Veterinária e Pet Shop Popular LTDA</small></span>
+            </a>
+            <nav><ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#brinquedos">Brinquedos</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul></nav>
+            <div class="header-cta">
+                <a href="https://wa.me/5521999998888?text=Olá! Preciso de ajuda no HV Yonen FH 🐾" class="btn-whatsapp-header" target="_blank">
+                    <span class="online-dot"></span> (21) 99999-8888
+                </a>
+                <a href="https://wa.me/5521999998888?text=Quero agendar um serviço no HV Yonen FH!" class="btn-cta-header" target="_blank">Agendar Agora</a>
+            </div>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#brinquedos">Brinquedos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5521999998888?text=Quero agendar!" class="btn-cta-header" target="_blank">Agendar Agora</a>
+    </div>
+
+    <!-- HERO SLIDER -->
+    <section class="hero" id="inicio">
+        <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7990?w=1400&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Saúde e alegria para o seu melhor amigo</h1>
+                <p>Clínica veterinária 24h, banho, tosa e os melhores brinquedos do Rio.</p>
+                <div class="hero-buttons">
+                    <a href="#servicos" class="btn-hero btn-hero-primary">Nossos Serviços</a>
+                    <a href="#brinquedos" class="btn-hero btn-hero-secondary">Ver Brinquedos</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?w=1400&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Brinquedos que fazem a festa</h1>
+                <p>Mordedores, pelúcias, cordas e jogos inteligentes para todas as idades.</p>
+                <div class="hero-buttons">
+                    <a href="#brinquedos" class="btn-hero btn-hero-primary">Explorar Brinquedos</a>
+                    <a href="https://wa.me/5521999998888?text=Quero comprar brinquedos!" class="btn-hero btn-hero-secondary" target="_blank">Comprar pelo WhatsApp</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1400&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Clínica Veterinária 24h no Yonen</h1>
+                <p>Emergências, consultas e muito cuidado com quem você ama.</p>
+                <div class="hero-buttons">
+                    <a href="#contato" class="btn-hero btn-hero-primary">Fale Conosco</a>
+                    <a href="https://wa.me/5521999998888?text=Preciso de atendimento veterinário!" class="btn-hero btn-hero-secondary" target="_blank">Emergência 24h</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
+        <div class="hero-arrows">
+            <button id="heroPrev">&#10094;</button>
+            <button id="heroNext">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- FAIXA DE CONFIANÇA -->
+    <section class="faixa" data-aos="fade-up">
+        <div class="faixa-inner">
+            <div class="faixa-card"><div class="faixa-icon">🏥</div><h3>Clínica 24h</h3><p>Plantão veterinário todos os dias.</p></div>
+            <div class="faixa-card"><div class="faixa-icon">🚚</div><h3>Entrega Grátis RJ*</h3><p>Compras acima de R$ 99.</p></div>
+            <div class="faixa-card"><div class="faixa-icon">⭐</div><h3>4.9 estrelas</h3><p>+3.000 clientes felizes.</p></div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre-section" id="sobre">
+        <div class="section-inner sobre-grid">
+            <div class="sobre-img" data-aos="fade-right"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=700&q=80" alt="Equipe HV Yonen FH"></div>
+            <div class="sobre-texto" data-aos="fade-left">
+                <h2>HV Yonen FH – Muito mais que um pet shop</h2>
+                <p>Desde 2015 no bairro do Yonen, somos uma clínica veterinária completa e um pet shop popular que entende a importância dos brinquedos no bem-estar dos animais. Nosso CNPJ é 64.703.848/0001-60. Trabalhamos com dedicação total para oferecer saúde, diversão e produtos de qualidade com preço justo.</p>
+                <div class="sobre-valores">
+                    <div class="valor-card"><div class="valor-icon">🎯</div><h4>Missão</h4><p>Cuidar da saúde e alegria dos pets.</p></div>
+                    <div class="valor-card"><div class="valor-icon">👁️</div><h4>Visão</h4><p>Ser referência em atendimento popular.</p></div>
+                    <div class="valor-card"><div class="valor-icon">❤️</div><h4>Valores</h4><p>Amor, respeito e preço justo.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section servicos-section" id="servicos">
+        <div class="section-inner">
+            <div class="section-titulo"><h2>Serviços Completos</h2><p>Do banho à cirurgia, tudo em um só lugar.</p></div>
+            <div class="servicos-grid">
+                <div class="servico-card" data-aos="fade-up">
+                    <div class="servico-img"><img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=600&q=80" alt="Banho e Tosa"><div class="servico-icone">🛁</div></div>
+                    <div class="servico-body"><h3>Banho & Tosa</h3><p>Produtos hipoalergênicos e secagem controlada.</p><span class="servico-preco">A partir de R$ 39,90</span><a href="#" class="btn-servico">Agendar</a></div>
+                </div>
+                <div class="servico-card" data-aos="fade-up">
+                    <div class="servico-img"><img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=600&q=80" alt="Clínica Veterinária"><div class="servico-icone">🏥</div></div>
+                    <div class="servico-body"><h3>Clínica Veterinária 24h</h3><p>Consultas, vacinas e cirurgias. Plantão permanente.</p><span class="servico-preco">Consultas a partir de R$ 69,90</span><a href="#" class="btn-servico">Agendar Consulta</a></div>
+                </div>
+                <div class="servico-card" data-aos="fade-up">
+                    <div class="servico-img"><img src="https://images.unsplash.com/photo-1544568100-847a948585b9?w=600&q=80" alt="Hotel e Creche"><div class="servico-icone">🏨</div></div>
+                    <div class="servico-body"><h3>Hotel & Creche</h3><p>Espaço monitorado com recreação e socialização.</p><span class="servico-preco">Diárias a partir de R$ 49,90</span><a href="#" class="btn-servico">Reservar</a></div>
+                </div>
+                <div class="servico-card" data-aos="fade-up">
+                    <div class="servico-img"><img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80" alt="Farmácia"><div class="servico-icone">💊</div></div>
+                    <div class="servico-body"><h3>Farmácia Veterinária</h3><p>Medicamentos, antipulgas e suplementos.</p><span class="servico-preco">Manipulação sob prescrição</span><a href="#" class="btn-servico">Pedir Agora</a></div>
+                </div>
+                <div class="servico-card" data-aos="fade-up">
+                    <div class="servico-img"><img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600&q=80" alt="Adestramento"><div class="servico-icone">🎓</div></div>
+                    <div class="servico-body"><h3>Adestramento Positivo</h3><p>Aulas individuais ou em grupo. Resolvemos latidos e ansiedade.</p><span class="servico-preco">Pacotes a partir de R$ 149,90</span><a href="#" class="btn-servico">Agendar Aula</a></div>
+                </div>
+                <div class="servico-card" data-aos="fade-up">
+                    <div class="servico-img"><img src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?w=600&q=80" alt="Entrega Express"><div class="servico-icone">🛵</div></div>
+                    <div class="servico-body"><h3>Entrega Express</h3><p>Ração, brinquedos e acessórios em até 2h na capital.</p><span class="servico-preco">Frete grátis a partir de R$ 99</span><a href="#" class="btn-servico">Comprar Agora</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRINQUEDOS EM DESTAQUE -->
+    <section class="section brinquedos-section" id="brinquedos">
+        <div class="section-inner">
+            <div class="section-titulo"><h2>🧸 Brinquedos que fazem a alegria</h2><p>Mordedores, pelúcias, cordas e jogos interativos.</p></div>
+            <div class="brinquedos-grid" data-aos="fade-up">
+                <div class="brinquedo-card"><div class="brinquedo-img"><img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?w=400&q=80" alt="Pelúcia"></div><div class="brinquedo-body"><h4>Pelúcia Jacaré</h4><p class="preco">R$ 29,90</p><a href="https://wa.me/5521999998888?text=Quero comprar a Pelúcia Jacaré" class="btn-comprar" target="_blank"><i class="fab fa-whatsapp"></i> Comprar</a></div></div>
+                <div class="brinquedo-card"><div class="brinquedo-img"><img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&q=80" alt="Mordedor Kong"></div><div class="brinquedo-body"><h4>Mordedor Kong Classic</h4><p class="preco">R$ 59,90</p><a href="https://wa.me/5521999998888?text=Quero%20comprar%20Mordedor%20Kong%20Classic" class="btn-comprar" target="_blank"><i class="fab fa-whatsapp"></i> Comprar</a></div></div>
+                <div class="brinquedo-card"><div class="brinquedo-img"><img src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?w=400&q=80" alt="Corda"></div><div class="brinquedo-body"><h4>Corda com Nós</h4><p class="preco">R$ 19,90</p><a href="https://wa.me/5521999998888?text=Quero%20comprar%20Corda%20com%20N%C3%B3s" class="btn-comprar" target="_blank"><i class="fab fa-whatsapp"></i> Comprar</a></div></div>
+                <div class="brinquedo-card"><div class="brinquedo-img"><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7990?w=400&q=80" alt="Bolinha"></div><div class="brinquedo-body"><h4>Bolinha com Guizo</h4><p class="preco">R$ 14,90</p><a href="https://wa.me/5521999998888?text=Quero%20comprar%20Bolinha%20com%20Guizo" class="btn-comprar" target="_blank"><i class="fab fa-whatsapp"></i> Comprar</a></div></div>
+                <div class="brinquedo-card"><div class="brinquedo-img"><img src="https://images.unsplash.com/photo-1541599540908-5bc5c7e8f7a0?w=400&q=80" alt="Jogo Inteligente"></div><div class="brinquedo-body"><h4>Jogo Interativo</h4><p class="preco">R$ 89,90</p><a href="https://wa.me/5521999998888?text=Quero%20comprar%20Jogo%20Interativo" class="btn-comprar" target="_blank"><i class="fab fa-whatsapp"></i> Comprar</a></div></div>
+                <div class="brinquedo-card"><div class="brinquedo-img"><img src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?w=400&q=80" alt="Arranhador"></div><div class="brinquedo-body"><h4>Arranhador para Gatos</h4><p class="preco">R$ 49,90</p><a href="https://wa.me/5521999998888?text=Quero%20comprar%20Arranhador%20para%20Gatos" class="btn-comprar" target="_blank"><i class="fab fa-whatsapp"></i> Comprar</a></div></div>
+                <div class="brinquedo-card"><div class="brinquedo-img"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&q=80" alt="Varinha"></div><div class="brinquedo-body"><h4>Varinha com Pena</h4><p class="preco">R$ 24,90</p><a href="https://wa.me/5521999998888?text=Quero%20comprar%20Varinha%20com%20Pena" class="btn-comprar" target="_blank"><i class="fab fa-whatsapp"></i> Comprar</a></div></div>
+                <div class="brinquedo-card"><div class="brinquedo-img"><img src="https://images.unsplash.com/photo-1558929996-da64ba858215?w=400&q=80" alt="Pelúcia"></div><div class="brinquedo-body"><h4>Pelúcia Polvo</h4><p class="preco">R$ 34,90</p><a href="https://wa.me/5521999998888?text=Quero%20comprar%20Pel%C3%BAcia%20Polvo" class="btn-comprar" target="_blank"><i class="fab fa-whatsapp"></i> Comprar</a></div></div>
+            </div>
+            <div style="text-align:center; margin-top:30px;"><a href="https://wa.me/5521999998888?text=Quero ver todos os brinquedos!" class="btn-hero btn-hero-primary" target="_blank">Ver Todos os Brinquedos</a></div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section depoimentos-section" id="depoimentos">
+        <div class="section-inner">
+            <div class="section-titulo"><h2>O que dizem nossos clientes</h2></div>
+            <div class="depo-grid">
+                <div class="depo-card"><div class="estrelas">★★★★★</div><p>"Levei meu cachorro para a consulta e ainda comprei um brinquedo incrível. Equipe maravilhosa!"</p><div class="depo-autor"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt=""><strong>Ana Clara</strong></div></div>
+                <div class="depo-card"><div class="estrelas">★★★★★</div><p>"Melhor pet shop do Yonen. Os brinquedos são de ótima qualidade e o atendimento é impecável."</p><div class="depo-autor"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt=""><strong>Rafael</strong></div></div>
+                <div class="depo-card"><div class="estrelas">★★★★★</div><p>"Minha gata amou a varinha. E a clínica salvou meu final de semana com uma emergência."</p><div class="depo-autor"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt=""><strong>Juliana</strong></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPE -->
+    <section class="section" id="equipe">
+        <div class="section-inner">
+            <div class="section-titulo"><h2>Nossa Equipe</h2></div>
+            <div class="equipe-grid">
+                <div class="equipe-card"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=200&q=80" alt="Dr. Veterinário"><h4>Dr. Paulo</h4><p>Veterinário Chefe</p></div>
+                <div class="equipe-card"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=80" alt="Gerente"><h4>Fernanda</h4><p>Gerente</p></div>
+                <div class="equipe-card"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80" alt="Groomer"><h4>Marcos</h4><p>Groomer</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="section-inner">
+            <div class="section-titulo"><h2>Dúvidas Frequentes</h2></div>
+            <div class="faq-list">
+                <div class="faq-item"><button class="faq-q">Vocês têm brinquedos para cães que destroem tudo? <span>+</span></button><div class="faq-a">Sim! Temos mordedores ultra resistentes, como o Kong Extreme e cordas de sisal, ideais para cães mais agitados.</div></div>
+                <div class="faq-item"><button class="faq-q">A clínica atende no domingo? <span>+</span></button><div class="faq-a">Atendemos emergências 24h, inclusive domingos e feriados. Consulte a disponibilidade de consultas eletivas.</div></div>
+                <div class="faq-item"><button class="faq-q">Fazem entrega na Zona Sul? <span>+</span></button><div class="faq-a">Sim, entregamos em toda a capital do Rio de Janeiro. Para a Zona Sul, entregas rápidas em até 2 horas.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section cta-final">
+        <div class="section-inner">
+            <h2>Seu pet merece o melhor. Venha para o HV Yonen FH!</h2>
+            <p>Agende uma consulta ou peça seus produtos favoritos agora mesmo.</p>
+            <a href="https://wa.me/5521999998888?text=Quero aproveitar!" class="btn-hero btn-hero-primary" style="margin-top:20px;">Falar pelo WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+        <div class="section-inner" style="display:grid; grid-template-columns:1fr 1fr; gap:40px;">
+            <div>
+                <h3>Fale Conosco</h3>
+                <form style="display:flex; flex-direction:column; gap:14px;">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <textarea rows="5" placeholder="Mensagem"></textarea>
+                    <button type="submit" class="btn-hero btn-hero-primary">Enviar</button>
+                </form>
+            </div>
+            <div>
+                <h3>Onde Estamos</h3>
+                <p>Rua Marquês de Abrantes, 450 – Yonen, Rio de Janeiro – RJ<br>📞 (21) 99999-8888<br>📧 contato@hvYonenfh.com.br</p>
+                <div style="height:250px; background:#ddd; border-radius:12px; margin-top:16px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.056... " width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>HV Yonen FH</h4>
+                <p>Clínica Veterinária e Pet Shop Popular LTDA<br>CNPJ: 64.703.848/0001-60</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Úteis</h4>
+                <ul><li><a href="#">Início</a></li><li><a href="#">Serviços</a></li><li><a href="#">Brinquedos</a></li><li><a href="#">Contato</a></li></ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos.html">Termos de Uso</a></li>
+                    <li><a href="aviso.html">Aviso Legal</a></li>
+                    <li><a href="reembolso.html">Política de Reembolso</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <div class="footer-redes">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Horários</h4>
+                <p>Seg-Sáb: 08h-20h<br>Dom: 09h-16h<br>Emergência 24h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 HV Yonen FH Clínica Veterinária e Pet Shop Popular LTDA – Todos os direitos reservados. Desenvolvido com 🧸 e muito amor.
+        </div>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+    <a href="https://wa.me/5521999998888?text=Olá! Preciso de ajuda 🐶" class="whatsapp-flutuante" target="_blank" style="position:fixed; bottom:24px; right:24px; z-index:999; background:#25D366; color:white; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2rem; box-shadow:0 6px 24px rgba(37,211,102,0.45); text-decoration:none; animation:bounce 2s infinite;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <style>
+        @keyframes bounce { 0%,100%{ transform:translateY(0); } 30%{ transform:translateY(-10px); } 50%{ transform:translateY(0); } 70%{ transform:translateY(-6px); } }
+        .whatsapp-flutuante:hover { animation: none; transform: scale(1.1); }
+    </style>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 700, once: true, offset: 80 });
+
+        // Header scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
+
+        // Mobile menu
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+            hamburger.classList.remove('active'); mobileMenu.classList.remove('active'); document.body.style.overflow = '';
+        }));
+
+        // Hero Slider
+        const slides = document.querySelectorAll('.hero-slide');
+        const dotsContainer = document.getElementById('heroDots');
+        let currentSlide = 0;
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+            if(i===0) dot.classList.add('active');
+        });
+        const dots = dotsContainer.querySelectorAll('button');
+        function goToSlide(i) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = (i + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, 6000);
+        }
+        function nextSlide() { goToSlide(currentSlide + 1); }
+        let slideInterval = setInterval(nextSlide, 6000);
+        document.getElementById('heroNext').addEventListener('click', nextSlide);
+        document.getElementById('heroPrev').addEventListener('click', () => goToSlide(currentSlide - 1));
+
+        // FAQ
+        document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => {
+            const item = q.parentElement;
+            item.classList.toggle('active');
+        }));
+    </script>
+</body>
+</html>
